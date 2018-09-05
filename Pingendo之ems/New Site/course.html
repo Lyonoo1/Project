@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css"></head>
+
+  <script type="text/javascript" src="jquery-3.3.1.js">
+  </script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script>
+    $(function(){
+      
+      $("#kctj").click(function(){
+         $("#ccc").load("course.html");
+      });
+      
+      $("#cchz").click(function(){
+        $("#ccc").load("grade.html");
+      });
+      
+        $("#dl").click(function(){
+        $("#ccc").load("denglu.html");
+      });
+    });
+  </script>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 px-5">
+          <form class="form">
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程编号</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="disabledInput" placeholder="30" disabled=""> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程名称</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="课程名称"> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程学分</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="inlineFormInput" placeholder="学分"> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程学时</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="inlineFormInput" placeholder="学习时间"> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">课程简介</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">必修课</label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="option1">是 </label>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">公共课</label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox3" value="option3">是 </label>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">所属院系</label>
+              <div class="col-sm-10">
+                <select class="custom-control custom-select">
+                  <option selected="" value="选择你的院系">请选择你的院系</option>
+                  <option value="1">文学院</option>
+                  <option value="2">数软学院</option>
+                  <option value="3">物理学院</option>
+                  <option value="4">化学院</option>
+                  <option value="5">医学院</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">所属专业</label>
+              <div class="col-sm-10">
+                <select class="custom-control custom-select">
+                  <option selected="" value="选择你的专业">请选择你的专业</option>
+                  <option value="1">计算机</option>
+                  <option value="2">软件外包</option>
+                  <option value="3">软件工程</option>
+                </select>
+              </div>
+            </div>
+            <div class="from-group">
+              <label for="inputfile">教材上传 </label>
+              <input type="file" id="inputfile"> </div>
+            <div> </div>
+            <button type="submit" class="btn btn-default btn-block btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
